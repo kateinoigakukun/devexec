@@ -1,6 +1,6 @@
 # devexec
 
-A simple tool to help switching PATH and execute command in the PATH
+A simple tool to help to switch PATH and execute command in the PATH
 
 ```sh
 # Register PATH modes
