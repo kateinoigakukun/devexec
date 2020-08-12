@@ -1,0 +1,9 @@
+#compdef _devexec devexec
+
+_devexec() {
+  _values Commands \
+    'list' \
+    'add' \
+    'delete' \
+    $(devexec list)
+}
