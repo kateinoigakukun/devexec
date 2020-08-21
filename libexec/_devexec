@@ -1,6 +1,18 @@
 #compdef _devexec devexec
 
 _devexec() {
+  local state
+  _arguments \
+      '1: :_devexec_modes' \
+      '*:: :->exec_args'
+  case $state in
+    exec_args)
+      _arguments \
+        '*::arguments: _normal'
+  esac
+}
+
+_devexec_modes() {
   _values Commands \
     'list' \
     'add' \
